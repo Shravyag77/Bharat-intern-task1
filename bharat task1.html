@@ -1,0 +1,285 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>I'm Shravya</h1>
+    <p>Student and Frontend Developer</p>
+    <img src="" width="60%" alt="Profile Image">
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#Certifications">Certifications</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hello! I'm Shravya, a passionate computer science engineering student with a strong desire to explore the ever-evolving world of technology.I am on an exciting journey to master various programming languages and frameworks, eager to contribute my skills to meaningful projects and innovations.
+    </p>
+    </section>
+
+
+
+  <section id="skills">
+    <h2>Skills</h2>
+
+    <div class="skill">
+        <span class="skill-name">HTML/CSS</span>
+        <div class="skill-bar">
+          <div class="skill-level" style="width: 85%;"></div>
+        </div>
+        <span class="skill-name">SQL</span>
+        <div class="skill-bar">
+          <div class="skill-level" style="width: 70%;"></div>
+        </div>
+        <span class="skill-name">C</span>
+        <div class="skill-bar">
+          <div class="skill-level" style="width: 65%;"></div>
+        </div>
+        <span class="skill-name">java/Python</span>
+        <div class="skill-bar">
+          <div class="skill-level" style="width: 40%;"></div>
+        </div>
+        <span class="skill-name">JavaScript</span>
+        <div class="skill-bar">
+          <div class="skill-level" style="width: 30%;"></div>
+        </div>
+      </div>
+      
+      <section id="internships">
+        <h2>Internships</h2><br>  
+        <div class="internship-item">
+            <div class="internship-role">Web Developer Intern</div>
+            <div class="internship-company">Lets GrowMore</div>
+        </div>
+        
+        
+    </section>
+
+  </section>
+
+  <section id="Certifications">
+    <h1>My Certifications</h1>
+
+  <div class="certificate">
+    <h3>Open Weaver Certificate</h3>
+    <button class="view-certificate-btn" onclick="toggleCertificate('certificate1')">View Certificate</button>
+    <img id="certificate1" src="/images/certificate1.jpg" class="certificate-image" hidden>
+  </div>
+
+  <div class="certificate">
+    <h3>Microsoft Azure Completion Certificate</h3>
+    <button class="view-certificate-btn" onclick="toggleCertificate('certificate2')">View Certificate</button>
+    <img id="certificate2" src="/images/certificate2.jpg" class="certificate-image" hidden>
+  </div>
+
+  </section>
+  
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+        <h4>Court Files Data Management Systems</h4>
+        <p style="color: grey;">Database which keeps record of the file location and sort the files according to case hearing date making it easier for the user to submit the files to the court ontime.</p>
+    </div>
+    <div class="project">
+        <h4>Padrone Oversight</h4>
+        <p style="color: grey;">It is a hostel management  app which keeps traxk of students presence for meal, complaint lodging on hostel issues and easy interaction with hostel hostel related issues and council members</p>
+    </div>
+  </section>
+
+  
+  <script>
+    function toggleCertificate(certificateId) {
+      const certificateImage = document.getElementById(certificateId);
+      certificateImage.hidden = !certificateImage.hidden;
+    }
+  </script>
+
+  <footer>
+    <p>Connect with me:</p>
+    <ul class="social-links">
+      <li><a href="https://www.facebook.com/amrutha.manjegowda?mibextid=ZbWKwL"><img src="/images/facebook.png" alt="Facebook"></a></li>
+      <li><a href="https://www..snapchat.com/add/amruthamgowda21?share_id=KSgnWgS6BCw&locale=en-US"><img src="/images/snapicon2.png" alt="Snapchat"></a></li>
+      <li><a href="https://www.linkedin.com/in/amrutha-varshini-144496255"><img src="/images/linkicon2.png" alt="LinkedIn"></a></li>
+    </ul>
+  </footer>
+  
+</body>
+</html>
+<style>
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+  }
+  
+  nav {
+    background-color: #444;
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav li {
+    display: inline-block;
+    margin: 0 20px;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  section {
+    padding: 50px;
+  }
+  
+  #projects {
+    background-color: #f4f4f4;
+  }
+  
+  .project {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  footer {
+    background-color: #444;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
+  .social-links {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+  }
+  
+  .social-links li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  .social-links img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .skill {
+    margin-bottom: 20px;
+  }
+  
+  .skill-name {
+    font-weight: bold;
+  }
+  
+  .skill-bar {
+    height: 20px;
+    width: 50%;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .skill-level {
+    height: 100%;
+    background-color: #4CAF50;
+    border-radius: 10px;
+  }
+  .view-certificate-btn {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .certificate {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .certificate-image {
+    margin: 20px auto;
+    max-width: 60%;
+    height: 50%;
+  }
+  
+  /* Reset some default styles to have a clean starting point */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Apply some basic styles to the body and headings */
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+  }
+  
+
+  
+  
+  #internships {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.internship-item {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.internship-role {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.internship-company {
+    color: #888;
+}
+</style>
